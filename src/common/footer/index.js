@@ -57,7 +57,7 @@ export default function Footer() {
                         </div>
                         <div className="flex justify-end">
                             <button
-                                className="font-roboto text-[16px] font-light py-[8px] px-[70px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+                                className="font-roboto text-[16px] font-light py-[8px] px-[70px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
                                 type="submit">
                                 Submit
                             </button>

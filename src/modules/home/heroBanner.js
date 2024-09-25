@@ -32,7 +32,7 @@ export default function HeroBanner() {
         <h1 className="font-montserrat text-[110px] font-black leading-[130px] tracking-[25px] ">SUCCESS</h1>
         <p className="font-montserrat text-[20px] font-light tracking-[4px] mb-[30px]">Now Available for Online Coaching</p>
         <button
-          className="font-roboto text-[16px] font-light py-[8px] px-[22px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+          className="font-roboto text-[16px] font-light py-[8px] px-[22px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
           type="button">
           Book Now
         </button>

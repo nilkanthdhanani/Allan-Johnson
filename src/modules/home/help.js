@@ -14,7 +14,7 @@ export default function Help() {
               <p className='pt-[20px] text-center text-[14px] font-roboto font-light tracking-wider leading-[30px] '>45 min</p>
             </div>
             <button
-              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
               type="button">
               Book It
             </button>
@@ -27,7 +27,7 @@ export default function Help() {
               <p className='text-center text-[14px] font-roboto font-light tracking-wider leading-[30px] '>$ 70</p>
             </div>
             <button
-              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
               type="button">
               Book It
             </button>
@@ -41,7 +41,7 @@ export default function Help() {
               <p className='text-center text-[14px] font-roboto font-light tracking-wider leading-[30px] '>$ 90</p>
             </div>
             <button
-              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+              className="font-roboto text-[16px] font-light py-[8px] px-[25px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
               type="button">
               Book It
             </button>
@@ -49,7 +49,7 @@ export default function Help() {
         </div>
         <div className="flex justify-center mt-[100px] mb-[70px] ">
           <button
-            className="font-roboto text-[16px] font-light py-[8px] px-[35px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+            className="font-roboto text-[16px] font-light py-[8px] px-[35px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
             type="button">
             More Services
           </button>

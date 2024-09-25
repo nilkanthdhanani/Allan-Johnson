@@ -12,7 +12,7 @@ export default function About() {
           <p className='mb-[65px] text-[16px] font-roboto font-light tracking-wider leading-7'>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
           <div className="flex gap-[20px]">
             <button
-              className="font-roboto text-[16px] font-light py-[8px] px-[22px] bg-black text-white border-[2px] border-transparent hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out"
+              className="font-roboto text-[16px] font-light py-[8px] px-[22px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
               type="button">
               Read More
             </button>
