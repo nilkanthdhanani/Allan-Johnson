@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       screens: {
         'max-lg': { 'max': '1024px' },
-        'max-sm': { 'max': '576px' },
         'max-md': { 'max': '768px' },
+        'max-sm': { 'max': '576px' },
       },
       container: {
         center: true,

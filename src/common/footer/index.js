@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="py-[60px] bg-footerBG" id='contact'>
             <div className="max-w-[980px] mx-auto px-[20px]">
-                <div className="grid grid-cols-2 gap-[45px]">
+                <div className="grid grid-cols-2 gap-[20px] max-sm:grid-cols-1 ">
                     <div className="flex flex-col justify-between">
                         <div>
                             <div className="h-[2px] w-[40px] bg-black mb-[15px]"></div>
@@ -15,7 +15,7 @@ export default function Footer() {
                             <p className='text-[14px] font-roboto font-light tracking-wider leading-6'>Tel: 123-456-7890</p>
                             <p className='pb-[25px] text-[14px] font-roboto font-light tracking-wider leading-6'>Fax: 123-456-7890</p>
                             <p className='pb-[25px] text-[14px] font-roboto font-light tracking-wider leading-6'>info@mysite.com</p>
-                            <div className="flex gap-[20px]">
+                            <div className="flex gap-[20px] pb-[25px]">
                                 <a href="https://www.facebook.com/" rel='noreferrer' target='_blank' >
                                     <img className='w-[25px]' src={facebook} alt="facebook" />
                                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                         <p className='max-w-[220px] mb-[20px] text-[14px] font-roboto font-light tracking-wider leading-6'>© 2035 by Personal Life Coach. Powered and secured by Wix</p>
                     </div>
                     <form className="">
-                        <div className="flex gap-[20px]">
+                        <div className="grid grid-cols-2 gap-[20px] max-sm:block ">
                             <div className="mb-[15px]">
                                 <label className="mb-[8px] block" htmlFor="first-name">First Name *</label>
                                 <input className="w-full bg-transparent border-[2px] border-black px-[12px] py-[8px]" type="text" id="first-name" required />

@@ -3,8 +3,8 @@ import { profile } from '../../assets/images/images'
 
 export default function About() {
   return (
-    <section id="about" className='grid grid-cols-2 gap-[80px] '>
-      <div className="flex justify-end py-[70px]">
+    <section id="about" className='grid grid-cols-2 gap-[80px] max-lg:block '>
+      <div className="flex justify-end py-[70px] max-lg:justify-start pl-[20px] ">
         <div className="max-w-[370px]">
           <div className="h-[2px] w-[40px] bg-black mb-[25px] "></div>
           <h2 className='mb-[50px] text-[48px] font-montserrat font-black tracking-wider leading-snug max-w-[200px] '>ABOUT ME</h2>
