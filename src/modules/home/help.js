@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Help() {
   return (
     <section className="py-[60px] w-full bg-hero-pattern bg-cover bg-fixed bg-center">
-      <div className="max-w-[980px] mx-auto px-[20px]">
+      <div className="container">
         <div className="h-[2px] w-[40px] bg-black mb-[25px]"></div>
-        <h2 className='mb-[50px] text-[48px] font-montserrat font-black tracking-wider leading-snug max-w-[400px] '>HOW I CAN HELP YOU</h2>
+        <h2 className='mb-[50px] text-[48px] font-montserrat font-extrabold tracking-wider leading-snug max-w-[400px] '>HOW I CAN HELP YOU</h2>
         <div className="grid grid-cols-3 gap-[20px]">
           <div className="p-[25px] flex flex-col items-center justify-between border-black border-[5px]">
             <div className="mb-[20px] ">
@@ -48,11 +49,13 @@ export default function Help() {
           </div>
         </div>
         <div className="flex justify-center mt-[100px] mb-[70px] ">
-          <button
-            className="font-roboto text-[16px] font-light py-[8px] px-[35px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
-            type="button">
-            More Services
-          </button>
+          <NavLink to={"/services"}>
+            <button
+              className="font-roboto text-[16px] font-light py-[8px] px-[35px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
+              type="button">
+              More Services
+            </button>
+          </NavLink>
         </div>
       </div>
     </section>

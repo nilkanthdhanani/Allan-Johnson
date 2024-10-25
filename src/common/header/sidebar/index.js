@@ -1,8 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { close } from '../../../assets/images/images';
 
 export default function Sidebar({ isOpen, toggleSidebar }) {
+    const navigate = useNavigate();
+
+    const handleNavigation = (section) => {
+        toggleSidebar();
+        navigate('/', { state: { targetSection: section } });
+    };
+
     return (
         <div className={`fixed z-50 top-0 left-0 w-full h-full bg-white text-black transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="pt-[70px]">
@@ -16,7 +23,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                     </NavLink>
                 </div>
                 <nav>
-                    <a href="#about" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={toggleSidebar}>
+                    <a href="#about" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={() => handleNavigation('about')}>
                         About
                     </a>
                     <NavLink to="/services" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={toggleSidebar}>
@@ -31,7 +38,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                     <NavLink to="/guides" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={toggleSidebar}>
                         Guides
                     </NavLink>
-                    <a href="#contact" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={toggleSidebar}>
+                    <a href="#contact" className="block max-w-[200px] mx-auto py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={() => handleNavigation('contact')}>
                         Contact
                     </a>
                 </nav>

@@ -3,6 +3,7 @@ import Header from '../common/header'
 import { Outlet } from 'react-router-dom'
 import Footer from '../common/footer'
 import ScrollToTop from '../components/ScrollToTop'
+import Chat from '../components/chat'
 
 export default function DefaultLayout() {
     return (
@@ -13,6 +14,7 @@ export default function DefaultLayout() {
                 <Outlet />
             </main>
             <Footer />
+            <Chat />
         </>
     )
 }

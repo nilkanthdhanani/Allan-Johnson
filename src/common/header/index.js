@@ -111,10 +111,10 @@ export default function Header() {
               Contact
             </a>
           </nav>
-          <a href="/" className="flex gap-[10px] items-center">
+          <NavLink to={"/login"} className="flex gap-[10px] items-center">
             <LoginIcon />
             <span className="text-green">Log In</span>
-          </a>
+          </NavLink>
         </div>
         <div className="cursor-pointer hidden max-md:block" onClick={toggleSidebar}>
           <div className="h-[2px] w-[22px] bg-black mb-[5px]"></div>

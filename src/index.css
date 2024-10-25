@@ -48,3 +48,17 @@ html {
   font-family: "Montserrat";
   src: url("./assets/font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
+
+.scrollbar {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 99px;
+  }
+}

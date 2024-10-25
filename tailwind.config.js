@@ -13,7 +13,7 @@ module.exports = {
         center: true,
         padding: '20px',
         screens: {
-          lg: '1080px',
+          lg: '1000px',
         },
       },
       colors: {
@@ -22,6 +22,8 @@ module.exports = {
         'green': '#317f81',
         'border1': '#cccccc',
         'footerBG': '#57bbbf',
+        'select': '#9FA3AF',
+        'whiteLight': 'rgba(255, 255, 255, 0.59)',
       },
       fontFamily: {
         roboto: ['Roboto'],
@@ -29,6 +31,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/images/webp/helpBG.webp')",
+        'blog-pattern': "url('/src/assets/images/webp/blogBg.webp')",
+        'login-banner': "url('/src/assets/images/webp/loginBanner.png')",
       },
     },
   },

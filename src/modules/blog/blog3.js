@@ -1,0 +1,71 @@
+import React from 'react'
+import { blogImg5, blogImg6 } from '../../assets/images/images';
+import Admin from '../../assets/images/svg/admin';
+import Batch from '../../assets/images/svg/batch';
+import Heart from '../../assets/images/svg/heart';
+
+export default function Blog3() {
+    return (
+        <>
+            <div className="grid grid-cols-2 mb-[20px] border-[1px] border-border1">
+                <img className='max-h-[360px]' src={blogImg5} alt="blogImg1" />
+                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group">
+                    <div>
+                        <div className="flex justify-between mb-[20px]">
+                            <div className="flex gap-[10px] items-center">
+                                <Admin />
+                                <div>
+                                    <span className='text-[14px] block font-roboto font-light leading-[20px]'>Admin</span>
+                                    <span className='text-[14px] font-roboto font-light flex leading-[20px] items-center gap-[5px]'>Jun 3, 2023 <div className="p-[1px] bg-black inline-block rounded-[50%]"></div>1 min</span>
+                                </div>
+                            </div>
+                            <div><Batch /></div>
+                        </div>
+                        <h3 className='mb-[15px] text-[28px] font-montserrat font-medium leading-[30px] group-hover:text-green transition duration-300'>5 secrets to finding happiness</h3>
+                        <p className='text-[16px] font-roboto font-light tracking-[1px] leading-[24px] my-[12px] group-hover:text-green transition duration-300'>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    </div>
+                    <div className="flex justify-between items-center pt-[15px] border-t-[1px] border-border1">
+                        <div className="flex items-center gap-[10px]">
+                            <span className='text-[14px] block font-roboto font-light'>6 views</span>
+                            <span className='text-[14px] block font-roboto font-light'>0 comments</span>
+                        </div>
+                        <div className="flex items-center gap-[5px]">
+                            <span className='text-[14px] block font-roboto font-light'></span>
+                            <Heart />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-2 border-[1px] border-border1">
+                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group">
+                    <div>
+                        <div className="flex justify-between mb-[20px]">
+                            <div className="flex gap-[10px] items-center">
+                                <Admin />
+                                <div>
+                                    <span className='text-[14px] block font-roboto font-light leading-[20px]'>Admin</span>
+                                    <span className='text-[14px] font-roboto font-light flex leading-[20px] items-center gap-[5px]'>Jun 3, 2023 <div className="p-[1px] bg-black inline-block rounded-[50%]"></div>1 min</span>
+                                </div>
+                            </div>
+                            <div><Batch /></div>
+                        </div>
+                        <h3 className='mb-[15px] text-[28px] font-montserrat font-medium leading-[30px] group-hover:text-green transition duration-300'>Bring light into your life</h3>
+                        <p className='text-[16px] font-roboto font-light tracking-[1px] leading-[24px] my-[12px] group-hover:text-green transition duration-300'>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    </div>
+                    <div className="flex justify-between items-center pt-[15px] border-t-[1px] border-border1">
+                        <div className="flex items-center gap-[10px]">
+                            <span className='text-[14px] block font-roboto font-light'>3 views</span>
+                            <span className='text-[14px] block font-roboto font-light'>0 comments</span>
+                        </div>
+                        <div className="flex items-center gap-[5px]">
+                            <span className='text-[14px] block font-roboto font-light'></span>
+                            <Heart />
+                        </div>
+                    </div>
+                </div>
+                <img className='max-h-[360px]' src={blogImg6} alt="blogImg2" />
+            </div>
+        </>
+    )
+}
