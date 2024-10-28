@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import Sidebar from './sidebar';
 import LoginIcon from '../../assets/images/svg/loginIcon';
 
-export default function Header() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
   const [isAboutActive, setIsAboutActive] = useState(false);
   const [isContactActive, setIsContactActive] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation(); // Use useLocation to track path changes
 
   const HEADER_HEIGHT = 101;
 
   const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
+    setIsSidebarOpen(!isSidebarOpen);
+    document.body.classList.toggle('no-scroll', !isSidebarOpen);
   };
 
   const handleScrollToSection = (sectionId) => {
@@ -23,7 +24,7 @@ export default function Header() {
   };
 
   const handleNavigateAndScroll = (sectionId) => {
-    if (window.location.pathname !== '/') {
+    if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => handleScrollToSection(sectionId), 100);
     } else {
@@ -37,6 +38,8 @@ export default function Header() {
   };
 
   const checkSectionsInView = useCallback(() => {
+    if (location.pathname !== '/') return;
+
     const aboutSection = document.getElementById('about');
     const contactSection = document.getElementById('contact');
 
@@ -46,14 +49,20 @@ export default function Header() {
     if (contactSection) {
       setIsContactActive(isSectionInView(contactSection));
     }
-  }, []);
+  }, [location.pathname]); // Add location.pathname as a dependency
 
   useEffect(() => {
-    window.addEventListener('scroll', checkSectionsInView);
-    return () => {
-      window.removeEventListener('scroll', checkSectionsInView);
-    };
-  }, [checkSectionsInView]);
+    setIsAboutActive(false);
+    setIsContactActive(false);
+
+    if (location.pathname === '/') {
+      window.addEventListener('scroll', checkSectionsInView);
+      checkSectionsInView();
+      return () => {
+        window.removeEventListener('scroll', checkSectionsInView);
+      };
+    }
+  }, [location.pathname, checkSectionsInView]); // Add checkSectionsInView as a dependency
 
   return (
     <header className="sticky z-50 top-0 bg-white py-[28px] max-md:py-[15px]">
@@ -121,7 +130,7 @@ export default function Header() {
           <div className="h-[2px] w-[22px] bg-black mb-[5px]"></div>
           <div className="h-[2px] w-[22px] bg-black"></div>
         </div>
-        <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
     </header>
   );
