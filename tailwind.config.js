@@ -22,7 +22,7 @@ module.exports = {
         'green': '#317f81',
         'border1': '#cccccc',
         'footerBG': '#57bbbf',
-        'select': '#9FA3AF',
+        'select': '#717171',
         'whiteLight': 'rgba(255, 255, 255, 0.59)',
       },
       fontFamily: {
@@ -32,6 +32,7 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/src/assets/images/webp/helpBG.webp')",
         'blog-pattern': "url('/src/assets/images/webp/blogBg.webp')",
+        'hero-banner': "url('/src/assets/images/webp/heroBannerLogin.webp')",
       },
     },
   },

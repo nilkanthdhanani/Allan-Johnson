@@ -23,7 +23,8 @@ import eyeIcon from "./svg/eyeIcon.svg"
 import personIcon from "./svg/personIcon.svg"
 import phoneIcon from "./svg/phoneIcon.svg"
 import loginWave from "./svg/loginWave.svg"
+import loginWaveM from "./svg/loginWaveM.svg"
 
 export {
-    profile, helpBG, heroBanner, close, menu, facebook, instagram, twitter, youtube, blogImg1, blogImg2, greaterThan, blogImg3, blogImg4, blogImg5, blogImg6, chat, closeWhite, eyeIcon, mailIcon, personIcon, phoneIcon, loginWave,
+    profile, helpBG, heroBanner, close, menu, facebook, instagram, twitter, youtube, blogImg1, blogImg2, greaterThan, blogImg3, blogImg4, blogImg5, blogImg6, chat, closeWhite, eyeIcon, mailIcon, personIcon, phoneIcon, loginWave, loginWaveM
 }

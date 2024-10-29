@@ -11,6 +11,12 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         navigate('/', { state: { targetSection: section } });
     };
 
+    const handleLoginClick = () => {
+        document.body.classList.remove('no-scroll');
+        toggleSidebar();
+        navigate('/login');
+    };
+
     return (
         <div className={`fixed z-50 top-0 left-0 w-full h-full bg-white text-black transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="scrollbar relative h-screen grid grid-rows-[78px_1fr] gap-[10px] ">
@@ -49,7 +55,10 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                     <a href="#contact" className="block py-[15px] text-center border-b-[1px] border-border1 hover:text-green transition duration-500" onClick={() => handleNavigation('contact')}>
                         Contact
                     </a>
-                    <NavLink to={"/login"} className="py-[15px] flex gap-[10px] justify-center items-center">
+                    <NavLink 
+                        to="/login" 
+                        className="py-[15px] flex gap-[10px] justify-center items-center"
+                        onClick={handleLoginClick}>
                         <LoginIcon />
                         <span className="text-green">Log In</span>
                     </NavLink>

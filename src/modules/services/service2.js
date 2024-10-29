@@ -23,7 +23,7 @@ const serviceDetail = [
 
 export default function Service2() {
   return (
-    <div className="grid grid-cols-3 gap-[32px]">
+    <div className="grid grid-cols-3 gap-[32px] max-lg:grid-cols-2 max-md:gap-[20px] max-sm:grid-cols-1 ">
       {serviceDetail.map((item, index) => (
         <div className="p-[30px] text-center bg-white flex flex-col justify-between gap-[30px] items-center" key={index}>
           <div>

@@ -1,17 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { eyeIcon, heroBanner, loginWave, mailIcon } from '../../assets/images/images';
+import { eyeIcon, heroBanner, loginWave, loginWaveM, mailIcon } from '../../assets/images/images';
 
 export default function Login() {
     return (
         <section>
-            <div className="w-full h-screen grid grid-cols-2">
-                <div className="scrollbar flex items-center h-screen relative">
-                    <div className="absolute h-full w-full top-0 right-[-99%]">
-                        <img src={loginWave} alt="loginWave" className='h-full' />
+            <div className="w-full h-screen grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto ">
+                <div className="hidden max-md:block bg-hero-banner w-full min-h-[500px] bg-fixed bg-bottom bg-cover"></div>
+                <div className="scrollbar flex items-center h-screen relative max-md:h-auto max-md:py-[50px]">
+                    <div className="absolute h-full w-full top-0 right-[-99%] max-md:right-0 max-md:top-[-100%] max-md:flex max-md:items-end">
+                        <picture>
+                            <source media="(max-width: 768px)" srcSet={loginWaveM} />
+                            <img src={loginWave} alt="loginWave" className='h-full' />
+                        </picture>
                     </div>
-                    <div className="relative max-h-[90vh] w-full overflow-auto pl-[30px] ">
-                        <div className="max-w-[480px] ml-auto flex flex-col">
+                    <div className="relative max-h-[90vh] w-full overflow-auto pl-[30px] max-md:px-[20px] ">
+                        <div className="max-w-[480px] ml-auto flex flex-col max-md:mx-auto ">
                             <div className="self-center font-montserrat whitespace-nowrap">
                                 <NavLink
                                     to="/"
@@ -51,7 +55,7 @@ export default function Login() {
                         </div>
                     </div>
                 </div>
-                <img src={heroBanner} alt="loginBanner" className='w-full h-full object-cover' />
+                <img src={heroBanner} alt="loginBanner" className='w-full h-full object-cover max-md:hidden' />
             </div>
         </section>
     )

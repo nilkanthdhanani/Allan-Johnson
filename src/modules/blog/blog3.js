@@ -7,9 +7,9 @@ import Heart from '../../assets/images/svg/heart';
 export default function Blog3() {
     return (
         <>
-            <div className="grid grid-cols-2 mb-[20px] border-[1px] border-border1">
-                <img className='max-h-[360px]' src={blogImg5} alt="blogImg1" />
-                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group">
+            <div className="grid grid-cols-2 items-center mb-[20px] border-[1px] border-border1 max-md:grid-cols-1">
+                <img className='w-full h-full max-h-[360px] object-cover' src={blogImg5} alt="blogImg1" />
+                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group max-md:p-[20px]">
                     <div>
                         <div className="flex justify-between mb-[20px]">
                             <div className="flex gap-[10px] items-center">
@@ -37,8 +37,8 @@ export default function Blog3() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 border-[1px] border-border1">
-                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group">
+            <div className="grid grid-cols-2 items-center border-[1px] border-border1 max-md:grid-cols-1">
+                <div className="bg-white min-h-[360px] py-[24px] px-[40px] flex flex-col gap-[20px] justify-between cursor-pointer group max-md:p-[20px] max-md:order-2">
                     <div>
                         <div className="flex justify-between mb-[20px]">
                             <div className="flex gap-[10px] items-center">
@@ -64,7 +64,7 @@ export default function Blog3() {
                         </div>
                     </div>
                 </div>
-                <img className='max-h-[360px]' src={blogImg6} alt="blogImg2" />
+                <img className='w-full h-full max-h-[360px] object-cover' src={blogImg6} alt="blogImg2" />
             </div>
         </>
     )

@@ -7,7 +7,7 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
   const [isAboutActive, setIsAboutActive] = useState(false);
   const [isContactActive, setIsContactActive] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation(); // Use useLocation to track path changes
+  const location = useLocation();
 
   const HEADER_HEIGHT = 101;
 
@@ -49,7 +49,7 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
     if (contactSection) {
       setIsContactActive(isSectionInView(contactSection));
     }
-  }, [location.pathname]); // Add location.pathname as a dependency
+  }, [location.pathname]);
 
   useEffect(() => {
     setIsAboutActive(false);
@@ -62,7 +62,7 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
         window.removeEventListener('scroll', checkSectionsInView);
       };
     }
-  }, [location.pathname, checkSectionsInView]); // Add checkSectionsInView as a dependency
+  }, [location.pathname, checkSectionsInView]);
 
   return (
     <header className="sticky z-50 top-0 bg-white py-[28px] max-md:py-[15px]">

@@ -3,13 +3,13 @@ import { profile } from '../../assets/images/images'
 
 export default function About() {
   return (
-    <section id="about" className='grid grid-cols-2 gap-[100px] max-lg:grid-cols-1 '>
-      <div className="flex justify-end py-[70px] max-lg:justify-start pl-[20px] ">
-        <div className="max-w-[430px]">
-          <div className="h-[2px] w-[40px] bg-black mb-[25px] "></div>
-          <h2 className='mb-[50px] text-[48px] font-montserrat font-extrabold tracking-wider leading-snug max-w-[200px] '>ABOUT ME</h2>
-          <p className='mb-[25px] text-[16px] font-roboto font-light tracking-wider leading-7'>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. </p>
-          <p className='mb-[65px] text-[16px] font-roboto font-light tracking-wider leading-7'>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+    <section id="about" className='grid grid-cols-2 gap-[100px] max-lg:grid-cols-1 max-lg:gap-0 '>
+      <div className="flex justify-end py-[70px] max-lg:justify-start pl-[20px] max-lg:px-[20px] max-sm:py-[50px] ">
+        <div className="max-w-[430px] max-lg:max-w-[600px] ">
+          <div className="h-[2px] w-[40px] bg-black mb-[25px] max-sm:mb-[15px] "></div>
+          <h2 className='mb-[50px] text-[48px] font-montserrat font-extrabold tracking-wider leading-snug max-w-[200px] max-sm:text-[36px] max-sm:mb-[30px] max-sm:leading-[40px] '>ABOUT ME</h2>
+          <p className='mb-[25px] text-[16px] font-roboto font-light tracking-wider leading-7 max-sm:text-[14px] max-sm:leading-[20px] max-sm:mb-[15px] '>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. </p>
+          <p className='mb-[65px] text-[16px] font-roboto font-light tracking-wider leading-7 max-sm:text-[14px] max-sm:leading-[20px] max-sm:mb-[20px] '>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
           <div className="flex gap-[20px]">
             <button
               className="font-roboto text-[16px] font-light py-[8px] px-[22px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"

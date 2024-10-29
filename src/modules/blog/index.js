@@ -19,17 +19,17 @@ export default function Blog() {
 
   return (
     <section>
-      <div className="pt-[60px] pb-[300px] w-full bg-blog-pattern bg-cover bg-fixed bg-center">
+      <div className="pt-[60px] pb-[300px] w-full bg-blog-pattern bg-cover bg-fixed bg-center max-lg:py-[60px]">
         <div className="container">
           <div className="max-w-[980px] mx-auto mb-[50px]">
-            <div className="h-[2px] w-[40px] bg-black mb-[25px]"></div>
-            <h2 className='text-[48px] font-montserrat font-extrabold tracking-wider max-w-[400px]'>THOUGHTS & NOTES</h2>
+            <div className="h-[2px] w-[40px] bg-black mb-[25px] max-sm:mb-[15px]"></div>
+            <h2 className='text-[48px] font-montserrat font-extrabold tracking-wider max-w-[400px] max-sm:text-[36px]'>THOUGHTS & NOTES</h2>
           </div>
         </div>
       </div>
       <div>
         <div className="container">
-          <div className="mt-[-31%]">
+          <div className="mt-[-31%] max-lg:mt-[30px]">
             {renderBlog()}
             <div className="pt-[20px] pb-[40px] flex gap-[30px] justify-center">
               <img 
