@@ -8,7 +8,7 @@ export default function SignUp() {
             <div className="w-full h-screen grid grid-cols-2 max-md:grid-cols-1 max-md:h-auto ">
                 <div className="hidden max-md:block bg-hero-banner w-full min-h-[500px] bg-fixed bg-bottom bg-cover"></div>
                 <div className="scrollbar flex items-center h-screen relative max-md:h-auto max-md:py-[50px]">
-                    <div className="absolute h-full w-full top-0 right-[-99%] max-md:right-0 max-md:top-[-100%] max-md:flex max-md:items-end">
+                    <div className="absolute h-full w-full top-0 right-[-99%] max-md:right-0 max-md:top-[-99%] max-md:flex max-md:items-end">
                         <picture>
                             <source media="(max-width: 768px)" srcSet={loginWaveM} />
                             <img src={loginWave} alt="loginWave" className='h-full' />

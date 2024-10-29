@@ -58,13 +58,11 @@ export default function Footer() {
                             <label className="mb-[8px] font-roboto font-light block" htmlFor="message">Message</label>
                             <textarea className="w-full bg-transparent border-[2px] border-black px-[12px] py-[8px] resize-none" type="text" id="message" rows={4} ></textarea>
                         </div>
-                        <div className="flex justify-end">
-                            <button
-                                className="font-roboto text-[16px] font-light py-[8px] px-[70px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
-                                type="submit">
-                                Submit
-                            </button>
-                        </div>
+                        <button
+                            className="font-roboto text-[16px] font-light py-[8px] px-[70px] bg-black text-white border-[2px] border-transparent hover:bg-transparent hover:text-black hover:border-black transition duration-300 ease-in-out"
+                            type="submit">
+                            Submit
+                        </button>
                     </form>
                 </div>
             </div>
